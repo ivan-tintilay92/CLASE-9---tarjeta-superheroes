@@ -1,0 +1,113 @@
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.descuento {
+  background-color: #1cd1b0;
+  padding: 10px;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  background-color: #00669f;
+  padding: 20px;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+/* aplicamos modelo de caja */
+article {
+  width: 25%;
+  height: 529px;
+  background-color: #f3f3f3;
+  margin: 50px;
+  border: solid 1px #cccccc;
+  position: relative;
+  text-align: center;
+  /* 3 tarjetas una al lado de otras */
+  display: inline-block;
+  vertical-align: top;
+}
+.fondo-card {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.perfil-card {
+  width: 100px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+article h2 {
+  padding-top: 60px;
+  text-align: center;
+}
+article p {
+  padding: 10px;
+}
+article a {
+  background-color: #00669f;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+.fa-heart {
+  color: red;
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+footer {
+  background-color: #00669f;
+  color: white;
+  padding: 15px;
+}
+/* Diseño para tablets */
+@media (max-width: 768px) {
+  article {
+    width: 42%;
+    margin: 15px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .perfil-card {
+    width: 80px;
+    top: 150px;
+  }
+  article h2 {
+    padding-top: 60px;
+  }
+}
+/* Diseño para celulares */
+@media (max-width: 480px) {
+  article {
+    width: 80%;
+    margin: 20px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .perfil-card {
+    width: 80px;
+    top: 150px;
+  }
+}
